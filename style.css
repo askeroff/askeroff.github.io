@@ -1,1 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.myheader {
+  background: #011627;
+  color: #fdfffc;
+  border-bottom: 10px solid #2ec4b6;
+  height: 350px;
+}
+
+.page-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3em;
+}
+
+.page-subtitle {
+  font-size: 2em;
+  color: #ff9f1c;
+}
+
+.header-nav {
+}
+
+.header-nav-link {
+  color: #fdfffc;
+  text-decoration: none;
+  border-bottom: 1px solid #fdfffc;
+  padding-right: 5px;
+}
+
+.header-nav-link:hover {
+  border: none;
+}
