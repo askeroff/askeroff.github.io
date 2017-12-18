@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 
 :root {
   --maincolor: #062f48;
-  --subtitlecolor: #fff;
+  --subtitlecolor: #f1f1f1;
   --secondarycolor: #35aaff;
-  --text-color: #383a3f;
+  --text-color: #f1f1f1;
 }
 
 * {
@@ -13,8 +13,9 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #f1f1f1;
+  background: #222;
 }
 
 .text-center {
@@ -22,7 +23,6 @@ body {
 }
 
 .myheader {
-  background: var(--maincolor);
   height: 30vh;
   min-height: 250px;
   display: flex;
@@ -50,11 +50,10 @@ body {
 }
 
 .header-nav {
-  background: var(--maincolor);
   padding: 5px;
   display: flex;
   justify-content: flex-end;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid #555;
 }
 
 .header-nav ul li {
@@ -81,8 +80,9 @@ body {
 }
 
 .about p {
-  padding: 5px;
-  color: var(--main-color);
+  padding: 8px;
+  margin: 10px 0px;
+  color: var(--text-color);
 }
 
 .portfolio {
@@ -98,7 +98,6 @@ body {
 }
 
 .portfolio-item {
-  background: var(--maincolor);
   color: var(--subtitlecolor);
   display: flex;
   justify-content: center;
@@ -122,6 +121,7 @@ body {
 .portfolio-title {
   text-align: center;
   margin: 8px 0;
+  font-family: monospace;
 }
 
 .portfolio-title a {
@@ -141,7 +141,7 @@ body {
 .contact .page-subtitle a {
   text-decoration: none;
   color: var(--text-color);
-  border-bottom: 1px solid var(--tex t-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .contact .page-subtitle a:hover {
@@ -167,7 +167,7 @@ body {
   }
 }
 
-@media (max-width: 480px) and (max-device-width: 480px) {
+@media (max-width: 640px) and (max-device-width: 640px) {
   .portfolio {
     margin: 0;
     width: auto;
