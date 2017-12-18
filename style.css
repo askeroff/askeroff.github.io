@@ -3,7 +3,7 @@
 :root {
   --maincolor: #062f48;
   --subtitlecolor: #f1f1f1;
-  --secondarycolor: #35aaff;
+  --secondarycolor: #e74c3c;
   --text-color: #f1f1f1;
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 .border-header {
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #444;
 }
 
 .text-center {
@@ -43,20 +43,21 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px dashed #444;
 }
 
 .myheader .page-title {
   font-size: 3em;
-  color: var(--subtitlecolor);
+  color: var(--secondarycolor);
 }
 
 .myheader .page-subtitle {
   font-size: 2em;
-  color: var(--subtitlecolor);
+  color: var(--text-color);
 }
 
 .page-subtitle {
-  color: var(--text-color);
+  color: var(--secondarycolor);
 }
 
 .section .page-subtitle {
@@ -83,12 +84,11 @@ a {
 
 .header-nav-link:hover {
   border: none;
-  color: var(--subtitlecolor);
+  color: var(--secondarycolor);
 }
 
 .about {
-  letter-spacing: 0.1em;
-  line-height: 2em;
+  letter-spacing: 2px;
   width: 80%;
   margin: 10px auto;
 }
@@ -96,6 +96,7 @@ a {
 .about p {
   padding: 8px;
   color: var(--text-color);
+  background: #444;
 }
 
 .portfolio {
@@ -115,6 +116,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #444;
 }
 
 .portfolio-item.first {
@@ -138,6 +140,11 @@ a {
 
 .portfolio-title a {
   color: var(--subtitlecolor);
+  text-decoration: none;
+}
+
+.portfolio-title a:hover {
+  color: var(--secondarycolor);
   text-decoration: none;
 }
 
