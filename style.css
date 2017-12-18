@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 :root {
-  --maincolor: #35aaff;
+  --maincolor: #062f48;
   --subtitlecolor: #fff;
-  --secondarycolor: #f14c8e;
+  --secondarycolor: #35aaff;
   --text-color: #383a3f;
 }
 
@@ -98,14 +98,13 @@ body {
 }
 
 .portfolio-item {
-  background: var(--secondarycolor);
+  background: var(--maincolor);
   color: var(--subtitlecolor);
-  height: 100px;
   text-align: center;
 }
 
 .portfolio-item:hover {
-  background: #e03177;
+  background: #1e82bf;
 }
 
 .portfolio-item.first {
@@ -131,12 +130,6 @@ body {
   text-decoration: none;
 }
 
-.portfolio-thumbnail {
-  max-width: 250px;
-  display: block;
-  margin: auto;
-}
-
 .contact {
   width: 80%;
   margin: 10px auto;
@@ -149,7 +142,7 @@ body {
 .contact .page-subtitle a {
   text-decoration: none;
   color: var(--text-color);
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--tex t-color);
 }
 
 .contact .page-subtitle a:hover {
@@ -171,7 +164,7 @@ body {
     margin: 0;
     width: auto;
     display: grid;
-    grid: 100px / repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -180,20 +173,6 @@ body {
     margin: 0;
     width: auto;
     display: grid;
-    grid: 100px / 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
-/*
-:root {
-  --maincolor: #456990;
-  --subtitlecolor: #f45b69;
-  --secondarycolor: #114b5f;
-  --text-color: #fdfffc;
-}
-
-  --maincolor: #1f2124;
-  --subtitlecolor: #f68657;
-  --secondarycolor: #f6b352;
-  --text-color: #383a3f;
-*/
