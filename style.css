@@ -100,11 +100,10 @@ body {
 .portfolio-item {
   background: var(--maincolor);
   color: var(--subtitlecolor);
-  text-align: center;
-}
-
-.portfolio-item:hover {
-  background: #1e82bf;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portfolio-item.first {
